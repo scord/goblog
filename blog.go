@@ -31,6 +31,7 @@ func main() {
 	http.HandleFunc("/admin/login", loginHandler)
 	http.HandleFunc("/admin/logout", logoutHandler)
 	http.HandleFunc("/admin/", homeHandler)
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 
 	http.ListenAndServeTLS(":10443", "cert.pem", "key.pem", nil)
 }

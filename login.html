@@ -1,8 +1,17 @@
-<h1>Login</h1>
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/static/style.css">
+<link href='http://fonts.googleapis.com/css?family=Domine|Fjalla+One|Open+Sans:100,400,700,600|Merriweather' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
 <form method="post" action="/admin/login/auth">
-    <label for="username">User name</label>
-    <input type="text" id="username" name="username">
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password">
-    <button type="submit">Login</button>
+    <legend>Blog Admin Log In</legend>
+    <input type="text" id="username" name="username" placeholder="Username">
+    <input type="password" id="password" name="password" placeholder="Password">
+    <button type="submit">Log In</button>
 </form>
+</body>
+</html>
