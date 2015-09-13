@@ -1,0 +1,20 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/static/style.css">
+<link href='http://fonts.googleapis.com/css?family=Domine|Fjalla+One|Open+Sans:100,400,700,600|Merriweather' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="container">
+
+<form method="post" action="/admin/addpost">
+    <input type="text" id="title" name="title" placeholder="Title"/>
+    <textarea id="body" name="body" placeholder="Body"></textarea>
+    <button type="submit">Add Post</button>
+</form>
+<form method="post" action="/admin/login/auth">
+    <button type="submit">Logout</button>
+</form>
+</div>
+</body>
+</html>

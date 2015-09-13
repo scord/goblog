@@ -85,7 +85,7 @@ func renderTemplate(w http.ResponseWriter, name string) {
 func homeHandler(w http.ResponseWriter, r *http.Request) {
 	username := checkCookie(r)
 	if username != "" {
-		renderTemplate(w, "logout")
+		renderTemplate(w, "home")
 	} else {
 		http.Redirect(w, r, "/admin/login", 302)
 	}
